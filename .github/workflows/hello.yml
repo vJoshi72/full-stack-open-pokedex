@@ -16,7 +16,7 @@ jobs:
   # This workflow contains a single job called "hello"
   hello:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-20.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -25,3 +25,10 @@ jobs:
       # Runs a simple command that outputs Hello World
       - name: Say Hello
         run: echo "Hello World!"
+
+      - name: Print Date
+        run: date
+
+      # List directory contents in long format
+      - name: List Directory Contents
+        run: ls -la
